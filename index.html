@@ -1,0 +1,152 @@
+<!-- Actividad Integradora UVA 1 (Trabajo individual): Sitio servicios profesionales
+Notas: tomé la inspiración de la página web de mi trabajo para utilizar sus datos, es por eso que la información está en inglés.
+También me tomé la libertad de cambiar los títulos de cada sección para que sea un poco distinta. 
+Web: https://palmetto.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmetto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header {
+            background-color: #fff; 
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #28a745; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            margin-bottom: 80px; 
+            text-align: center;
+        }
+        h2 {
+            color: #28a745; 
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .content img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-content img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .column {
+            width: 50%;
+            float: left;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://image.pitchbook.com/winh4xn0CqHkGdZ1jcolIVnIrXh1614071464223_200x200" alt="Logo de Palmetto">
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Products and Services</a>
+        <a href="#proposal">Buy Solar Panels</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="about">
+        <h2>Clean energy is for everyone</h2>
+        <div class="content">
+            <img src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F3d2628f9299d3f6d0cd8414444453b23.png&q=75&f=webp" alt="Imagen de About Us">
+            <p><strong>Our mission:</strong> We are on a mission to stop climate change before we reach an irreversible tipping point. This requires urgency and change on a massive scale but technological advancements have put it within reach.</p>
+            <p>At Palmetto, we are fueling the rapid expansion of residential solar energy across the United States. How? By flipping the traditional solar industry model on its head. We've developed software products that help people, like you, to instantly calculate their monthly savings and put those savings within reach. Our decentralized network of solar sellers and installers allows homeowners to quickly access professional service and support while growing the clean energy economy in their local community.</p>
+        </div>
+    </section>
+    <section id="services">
+        <h2 style="color: #28a745;">It’s time to upgrade your electricity</h2>
+        <div class="content">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/placas-solares-tejado-thinkstock-getty-1662535982.jpg?crop=1.00xw:0.842xh;0,0.151xh&resize=1200:*" alt="Imagen de Servicios Ofrecidos">
+            <p>Technology has advanced dramatically in the last 20 years, and solar is no exception. Yet, many homeowners continue to rely on dated electricity grids and plans. By switching to solar, the future of electricity, you can unlock a host of benefits that fossil fuels simply can’t provide.</p>
+        </div>
+    </section>
+    <section id="proposal">
+        <h2 style="color: #28a745;">Choose how you invest in solar</h2>
+        <div class="content">
+            <div class="column">
+                <p><strong>Solar Cash Purchase</strong></p>
+                <ul>
+                    <li>Higher upfront costs, faster monthly savings</li>
+                    <li>Greater long-term savings</li>
+                    <li>Pocket your monthly electricity savings</li>
+                    <li>Own your system outright</li>
+                    <li>Three-part payment schedule; final payment due when your system is activated</li>
+                    <li>2.9% processing fee</li>
+                    <li>Credit application not required</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p><strong>Solar Loan</strong></p>
+                <ul>
+                    <li>Get started with no money down</li>
+                    <li>Greater flexibility on payment schedule</li>
+                    <li>Low monthly loan payments</li>
+                    <li>Select from multiple loan options</li>
+                    <li>5-25 year terms</li>
+                    <li>3.99-11.99% APR, may include financing fees</li>
+                    <li>Credit application required</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 style="color: #28a745;">Get in touch</h2>
+        <div class="contact-content">
+            <img src="https://palmetto.com/images/contact-us-inset-large.jpg" alt="Imagen de Información de Contacto">
+            <p>It’s our mission to be the world’s largest clean energy and social impact company. Leading the world toward a clean energy future is at the heart of everything we do. It guides us to perform sustainably and ethically as we sell, design, finance, build and maintain residential solar systems across the country.</p>
+            <p>At Palmetto, we work on your behalf, helping homeowners to access clean energy savings with less time and no hassle. Our dedicated Customer Experience Team is always one click away. Please use the form below to get in touch.</p>
+        </div>
+        <div>
+            <p>Email: <a href="mailto:help@palmetto.com">help@palmetto.com</a></p>
+            <p>Phone: <a href="tel:(855) 20339-1831">(855) 20339-1831</a></p>
+        </div>
+    </section>
+</body>
+</html>
